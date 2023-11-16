@@ -8,7 +8,7 @@ const [pokemonList, setPokemonList] = useState([]);
   //need to create a useEffect to pull from the API and place in a try->catch function and also use async await
   useEffect(() => {
     async function fetchPokemon() {
-      console.log(`hello`)
+      
       try{
         const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
         const resultJson = await response.json();
@@ -20,7 +20,15 @@ const [pokemonList, setPokemonList] = useState([]);
     fetchPokemon();
   },[]);
   console.log("PokemonList: ", pokemonList);
- 
+ return(
+  <section>
+  <h2>List of Pokemon</h2>
+  <ul>
+    <h3>Pokedex</h3>
+    <li></li>
+  </ul>
+  </section>
+ );
   
 }
 export default PokiList;
