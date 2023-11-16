@@ -17,7 +17,16 @@ const [pokemonList, setPokemonList] = useState([]);
       }
     }
     fetchPokemon();
-  },[])
+  },[]);
   console.log("PokemonList: ", pokemonList);
+  return(
+    <section>
+      <ul>
+        <h2>Pokemon List</h2>
+        <li>Name: </li>
+      </ul>
+    </section>
+
+  );
 }
 export default PokiList;

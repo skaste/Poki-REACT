@@ -8,7 +8,7 @@ function App() {
     <>
    {/* create a ternary operator statement to pull Poki */}
     </>
-  )
+  );
 }
 
 export default App
