@@ -1,5 +1,6 @@
 const Pokemon = ({selected, name})=>{
-return(
+
+  return(
   <li key={name} onClick={()=>{selected(name);}}>
     {name}
   </li>
