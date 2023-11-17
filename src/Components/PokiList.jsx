@@ -12,7 +12,7 @@ const PokiList = ({ setSelectedPokemonName }) => {
         const resultJson = await response.json();
         setPokemonList(resultJson.results);
       } catch (e) {
-        console.error(error);
+        console.error(e);
       }
     }
     fetchPokemon();
@@ -27,7 +27,6 @@ const PokiList = ({ setSelectedPokemonName }) => {
           {pokemonList.map((pokemon) => {
             
               <Pokemon
-                key={pokemon.name}
                 name={pokemon.name}
                 selected={setSelectedPokemonName}
               />

@@ -1,7 +1,7 @@
-const Pokemon = ({selected, pokemon})=>{
+const Pokemon = ({selected, name})=>{
 return(
-  <li onClick={()=>{selected(pokemon.name);}}>
-    {pokemon.name}
+  <li key={name} onClick={()=>{selected(name);}}>
+    {name}
   </li>
 );
 }
